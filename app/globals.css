@@ -5,10 +5,14 @@
   --foreground: #171717;
 }
 
+/* Les polices (--font-manrope, --font-cormorant, --font-geist-mono) sont
+   chargées par next/font dans app/layout.tsx, puis associées ici à Tailwind :
+   font-sans = texte courant, font-heading = titres, font-mono = code. */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-jakarta);
+  --font-heading: var(--font-cormorant);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +26,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

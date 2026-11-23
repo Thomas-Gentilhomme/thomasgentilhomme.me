@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# données personnelles (exports LinkedIn) : ne jamais publier
+/tools/*.pdf
+
+# sorties de test des outils (on garde seulement le portrait nettoyé)
+/tools/output/*
+!/tools/output/visage.clean.svg
+
+# python
+__pycache__/
